@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+<script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.js"></script>
+<script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/base64-string.js"></script>
+<script language="javascript" src="script.js"></script>
+</head>
+<body>
+<div>
+<form name="daForm">
+<P><B>Original:</b></p>
+<textarea name="Orig" rows=10 cols=60></textarea>
+<br>
+<input type=button onClick="CompressConfirm()" value="Compress Code!"><br>
+<B><input type=text size=60 name="Progress"></b>
+<p>View results of the compression in a <a
+href="javascript:CreatePopup(document.daForm.Comp.value);">popup
+window</a>.</p>
+<p><B>Compressed:</B></p>
+<textarea name="Comp" rows=10 cols=60></textarea>
+</form></div>
+</body>
+</html>
